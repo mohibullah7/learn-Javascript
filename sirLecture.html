@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lecture about function</title>
+</head>
+
+<body>
+
+
+    <button onclick="click3()">try it</button>
+    <button onclick="checkit()">check it</button>
+</body>
+<script>
+    let a = 20;
+    let b = 30;
+    let c = a + b;
+
+    function click3() {
+        let a = 20;
+        let b = 30;
+        let c = a + b;
+
+        // console.log("c");
+    }
+    // let anonymusfunction = function () {
+    //     console.log("this is the anonymous funvtion");
+    // }
+    // single statemnet arrow func
+    // anonymusfunction();
+    let singlestatementarrfunc = () => 3 + "" + "single statement";
+    let var3 = singlestatementarrfunc();
+    // console.log(var3)
+    // multiarrow func
+
+
+    // non parametrized function
+    let mutiarrofunc = () => {
+        let f = 20;
+        let d = 10;
+        sum = f + d;
+        console.log(sum);
+        // return sum;
+    }
+    function myf() {
+
+    }
+
+    let newf = mutiarrofunc;
+    // let val = mutiarrofunc();
+    // console.log(val);
+
+    // console.log(mutiarrofunc);
+
+    // parametrized function
+    function divid(a = 5, b = 2) {
+        let result;
+        let multi;
+        result = a / b;
+        multi = a * b;
+        console.log(result);
+        console.log(multi);
+    }
+
+    divid();
+    // let v1 = 50;
+    //  let v2 = 5;
+    // divid(v1, 10);
+    // divid(10,2);
+    // divid(15,2);
+
+
+    // parametrized function
+    function myName(name="not provided") {
+        console.log(name);
+    }
+    let getName = "Abdul Rauf"
+    myName(getName
+    );
+
+</script>
+
+</html>
